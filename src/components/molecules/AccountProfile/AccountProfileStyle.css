@@ -1,0 +1,27 @@
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100px;
+  display: flex;
+  justify-content: left;
+}
+
+.selectProfilePicture {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.container:hover .selectProfilePicture {
+  opacity: 1;
+}
